@@ -1,21 +1,9 @@
-# Write and Back 5.0.3 — Laboratório PRO
+# Write and Back 5.0.3 — revisão de consistência
 
-## O que foi implementado
-- Laboratório PRO mantido como módulo da versão 5.0.3.
-- Conteúdo do Laboratório PRO fica oculto até uma ativação válida.
-- Licenças PRO comerciais continuam validadas por assinatura ECDSA P-256 usando a chave pública embutida no aplicativo.
-- Código especial do titular `onsite`: validação local por SHA-256 e liberação integral do Laboratório PRO neste navegador.
-- A ativação do titular persiste neste navegador e pode ser removida em “Remover licença local”.
-- O aceite dos documentos continua sendo uma etapa separada e necessária para executar ações protegidas.
+Versão do produto: **5.0.3**. As referências a **5.0.2** são exclusivamente referências ao núcleo/motor inteligente herdado, não à versão do aplicativo.
 
-## Ativação
-1. Abra “Licença e ativação”.
-2. Para clientes, cole a licença assinada emitida pelo titular e clique em “Validar e ativar”.
-3. Para o titular, informe o código especial `onsite` no campo “Ativação integral do titular” e clique em “Liberar acesso total”.
-4. Acesse “Laboratório PRO”.
+Esta revisão corrige título, descrição, tela Sobre, cabeçalho, identificação dos relatórios exportados, metadados legais e versão do aceite dos documentos. A alteração de `TERMS_VERSION` exige que o usuário faça novo aceite da edição 5.0.3.
 
-## Limitação de segurança importante
-O código especial é validado localmente e o desbloqueio é guardado no armazenamento do navegador. Como o HTML e o JavaScript são distribuídos ao usuário, esse mecanismo não é uma proteção anticópia forte: alguém com conhecimento técnico pode inspecionar ou modificar o código local. Para comercialização em escala, mantenha o fluxo de licenças assinadas e migre a emissão/revogação/controle de dispositivos para um backend autenticado. Não coloque a chave privada de assinatura no HTML.
+O Laboratório PRO permanece condicionado à licença validada ou ao código local do titular e gera as três variantes completas: Essencial, Equilibrado e Avançado.
 
-## Escopo
-Esta entrega prepara e protege a interface do Laboratório PRO. Não implementa checkout, cobrança recorrente, painel de clientes, emissão automática de licenças ou revogação remota.
+Verificações estáticas e sintaxe JS registradas em `RELATORIO_CONSISTENCIA_VERSAO.md`. Teste funcional/visual Android ainda deve ser executado.

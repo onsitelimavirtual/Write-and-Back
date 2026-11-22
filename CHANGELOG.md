@@ -1,14 +1,9 @@
 # CHANGELOG — Write and Back 5.0.3
 
-## 5.0.3 — Laboratório PRO com ativação
-- Mantido o Laboratório PRO como módulo separado.
-- Conteúdo avançado oculto até licença válida.
-- Mantida a validação criptográfica de licenças assinadas ECDSA P-256.
-- Adicionado código especial do titular `onsite`, validado por hash SHA-256.
-- Adicionado desbloqueio persistente local para o titular.
-- Botão de remoção limpa tanto licença comercial quanto ativação do titular.
-- Aceite de Termos/Privacidade permanece independente da licença.
-
-## Limitações
-- Ativação do titular é local, não autenticada por servidor.
-- Sem checkout, cobrança, emissão/revogação remota ou gestão de dispositivos.
+## Correção — identificação e Laboratório PRO
+- Corrigida divergência entre a versão 5.0.2 exibida em Sobre/logo e a versão de produto 5.0.3.
+- Identificado o núcleo 5.0.2 como componente herdado, sem confundi-lo com a versão do produto.
+- Laboratório agora gera e exibe os três prompts completos simultaneamente (Essencial, Equilibrado e Avançado).
+- Adicionados copiar, download individual e abrir no Estúdio em cada cartão.
+- Exportação conjunta continua incluindo as três versões.
+- Mantido bloqueio por licença validada/aceite.

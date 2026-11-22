@@ -1,17 +1,18 @@
-# Relatório de validação — Write and Back 5.0.3 Laboratório PRO
+# Relatório de validação — Write and Back 5.0.3 (correção)
 
-- [x] Laboratório PRO encapsulado em contêiner inicialmente oculto.
-- [x] Interface de ativação do titular presente.
-- [x] Hash SHA-256 do código `onsite` presente e correspondente.
-- [x] Ativação do titular grava apenas marcador local, não o código em texto puro.
-- [x] Remoção de licença apaga licença assinada e marcador do titular.
-- [x] Licença comercial continua exigindo assinatura ECDSA válida e datas válidas.
-- [x] Controles do laboratório continuam condicionados à função wantPro e ao aceite dos documentos.
-- [x] Cinco blocos JavaScript passaram por `node --check`.
-- [x] HTML parseado; IDs duplicados não encontrados.
+- [x] Versão de produto 5.0.3 no título
+- [x] Versão de produto 5.0.3 no Sobre
+- [x] Logo identifica 5.0.3
+- [x] Laboratório exige wantPro
+- [x] Geração das três profundidades
+- [x] Três cartões com prompts integrais
+- [x] Cópia e download individual
+- [x] Exportação conjunta das três versões
+- [x] Controles PRO continuam bloqueados sem licença
+- [x] Sem IDs HTML duplicados
 
-## Limites não testados
-- Não foi possível executar teste visual real em Android nesta etapa.
-- Não foi testada uma licença comercial assinada real emitida pelo titular.
-- O código `onsite` é um desbloqueio local de conveniência, não uma barreira anticópia forte. O código-fonte do cliente pode ser inspecionado/modificado.
-- Não há backend de licenciamento, cobrança, emissão ou revogação remota.
+- Blocos JavaScript verificados: 5
+- Erros de sintaxe: 0
+- IDs duplicados: 0
+
+**Limite:** análise estática e verificações de estrutura; não foi possível executar o navegador Android real nesta etapa nem validar uma licença comercial emitida. A execução de três profundidades está garantida pelo fluxo de código e apresentação dos três resultados; teste prático em dispositivo continua recomendado.

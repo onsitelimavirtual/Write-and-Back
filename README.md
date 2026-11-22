@@ -1,9 +1,5 @@
-# Write and Back 5.0.3 — revisão de consistência
+# Write and Back 5.0.3 — Entrega automática
 
-Versão do produto: **5.0.3**. As referências a **5.0.2** são exclusivamente referências ao núcleo/motor inteligente herdado, não à versão do aplicativo.
+A seleção padrão de formato agora é automática. O motor classifica a proposta e acrescenta ao fim do prompt uma instrução direta para gerar o artefato correspondente (software, relatório, jogo, apresentação, documento, material didático, campanha etc.), sem solicitar ao usuário uma nova escolha de formato quando a proposta é clara.
 
-Esta revisão corrige título, descrição, tela Sobre, cabeçalho, identificação dos relatórios exportados, metadados legais e versão do aceite dos documentos. A alteração de `TERMS_VERSION` exige que o usuário faça novo aceite da edição 5.0.3.
-
-O Laboratório PRO permanece condicionado à licença validada ou ao código local do titular e gera as três variantes completas: Essencial, Equilibrado e Avançado.
-
-Verificações estáticas e sintaxe JS registradas em `RELATORIO_CONSISTENCIA_VERSAO.md`. Teste funcional/visual Android ainda deve ser executado.
+A seleção manual permanece disponível. A classificação local é heurística e deve ser revista em ideias ambíguas. O prompt não pode garantir capacidades que o modelo de destino ou seu ambiente não possua.

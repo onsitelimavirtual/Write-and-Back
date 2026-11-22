@@ -1,9 +1,9 @@
 # CHANGELOG — Write and Back 5.0.3
 
-## Correção — identificação e Laboratório PRO
-- Corrigida divergência entre a versão 5.0.2 exibida em Sobre/logo e a versão de produto 5.0.3.
-- Identificado o núcleo 5.0.2 como componente herdado, sem confundi-lo com a versão do produto.
-- Laboratório agora gera e exibe os três prompts completos simultaneamente (Essencial, Equilibrado e Avançado).
-- Adicionados copiar, download individual e abrir no Estúdio em cada cartão.
-- Exportação conjunta continua incluindo as três versões.
-- Mantido bloqueio por licença validada/aceite.
+## Entrega conforme identificação automática
+- Campo Entrega desejada inicia em identificação automática.
+- Adicionado detector heurístico de tipo de artefato.
+- Prompt termina com instrução obrigatória para produzir o artefato identificado.
+- Instrução incluída no caminho clássico e no caminho de motor avançado local.
+- Seleção manual de formato preservada.
+- Testados seis exemplos de classificação.

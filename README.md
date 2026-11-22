@@ -1,21 +1,21 @@
-# Write and Back PRO 5.0.2 — Correção de geração e versão
+# Write and Back 5.0.3 — Laboratório PRO
 
-**Copyright © 2026 Nailson Rodrigues de Lima.**
+## O que foi implementado
+- Laboratório PRO mantido como módulo da versão 5.0.3.
+- Conteúdo do Laboratório PRO fica oculto até uma ativação válida.
+- Licenças PRO comerciais continuam validadas por assinatura ECDSA P-256 usando a chave pública embutida no aplicativo.
+- Código especial do titular `onsite`: validação local por SHA-256 e liberação integral do Laboratório PRO neste navegador.
+- A ativação do titular persiste neste navegador e pode ser removida em “Remover licença local”.
+- O aceite dos documentos continua sendo uma etapa separada e necessária para executar ações protegidas.
 
-## Entrega
+## Ativação
+1. Abra “Licença e ativação”.
+2. Para clientes, cole a licença assinada emitida pelo titular e clique em “Validar e ativar”.
+3. Para o titular, informe o código especial `onsite` no campo “Ativação integral do titular” e clique em “Liberar acesso total”.
+4. Acesse “Laboratório PRO”.
 
-- `index.html`: interface responsiva autônoma com os motores de geração e refinamento embutidos.
-- `Write_and_Back_PRO_5_0_2_Standalone.html` (entregue também separadamente): mesma aplicação em arquivo HTML.
-- `local-ai-core.js` e `precision-core.js`: cópias dos motores para teste e manutenção, embutidos no HTML para uso standalone.
-- `local-bridge.js`, `package.json`, `INICIAR_LOCAL.*`: integração opcional com Ollama em computador compatível, sem API de terceiros obrigatória.
-- `COMECE_AQUI.txt`: instruções diretas de instalação e atualização.
-- `TERMOS_DE_USO.md`, `POLITICA_DE_PRIVACIDADE.md`, `CONTRATO_DE_LICENCA.md`: minutas de uso, privacidade e licenciamento.
-- `tests/`: testes automatizados; `QA_RESULTADOS_5_0_2.md`: resultados de QA e ressalvas.
+## Limitação de segurança importante
+O código especial é validado localmente e o desbloqueio é guardado no armazenamento do navegador. Como o HTML e o JavaScript são distribuídos ao usuário, esse mecanismo não é uma proteção anticópia forte: alguém com conhecimento técnico pode inspecionar ou modificar o código local. Para comercialização em escala, mantenha o fluxo de licenças assinadas e migre a emissão/revogação/controle de dispositivos para um backend autenticado. Não coloque a chave privada de assinatura no HTML.
 
-## Correções
-
-A versão anterior deixava um identificador 4.0 no cabeçalho de prompts de um dos modos e em trecho da política de privacidade. O texto antigo foi corrigido. Foi adicionada limpeza específica de um título externo legado nas novas gerações, nos resultados neurais recebidos e em projetos abertos/importados do histórico, **sem apagar os dados antigos armazenados no navegador**.
-
-### Observações
-
-O modo local é heurístico e não é um modelo generativo neural treinado. A ponte Ollama é opcional. Não há assinatura de API exigida. A versão atual não tem processamento de pagamentos ou validação comercial online. A implantação pública exige revisão jurídica e testes no ambiente final. Ao publicar em GitHub Pages ou outros provedores, substitua `index.html`; os usuários devem atualizar a página para não carregar código em cache. O HTML avulso pode ser aberto sem conexão.
+## Escopo
+Esta entrega prepara e protege a interface do Laboratório PRO. Não implementa checkout, cobrança recorrente, painel de clientes, emissão automática de licenças ou revogação remota.
